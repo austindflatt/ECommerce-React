@@ -1,13 +1,14 @@
 import React from "react";
-import Grid from '@material-ui/core';
+import { Grid } from '@material-ui/core';
+import Product from "./Product/Product";
 
 const products = [
-    { id: 1, name: 'Yeezy 350 V2', description: 'Yeezy'},
-    { id: 2, name: 'MacBook Pro', description: 'M1 MacBook Pro'},
-    { id: 3, name: 'Shoes', description: 'Yeezys'},
+    { id: 1, name: 'YEEZY BOOST 350 V2 BRED', description: 'Yeezy', image: 'https://cdn.flightclub.com/1250/TEMPLATE/800389/1.jpg', price: '$375'},
+    { id: 2, name: 'YEEZY BOOST 350 V2 TAIL LIGHT', description: 'Yeezy', image: 'https://cdn.flightclub.com/3000/TEMPLATE/168022/1.jpg', price: '$330'},
 ];
 
 const Products = () => {
+    return (
     <main>
         <Grid container justify="center" spacing={4}>
             {products.map((product) => (
@@ -17,7 +18,7 @@ const Products = () => {
             ))}
         </Grid>
     </main>
-
+    )
 }
 
 export default Products;
