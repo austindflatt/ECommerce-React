@@ -4,9 +4,14 @@ import { AddShoppingCart } from '@material-ui/icons';
 
 const Product = () => {
     return (
-        <div>
-            
-        </div>
+        <Card className={classes.root}>
+            <CardMedia className={classes.media} image='' title={product.name} />
+            <CardContent>
+                <div>
+                    
+                </div>
+            </CardContent>
+        </Card>
     )
 }
 
